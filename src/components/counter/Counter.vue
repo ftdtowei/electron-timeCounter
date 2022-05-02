@@ -1,21 +1,24 @@
 <template>
     <div>
-        <a-progress type="circle" :percent="75" :format="percent => `${percent} min`" />
+        <a-progress type="circle"  :percent = "200" :format="percent => `${percent} min`" />
     </div>
 </template>
 
 <script>
+import timeUtil from '../utils/time'
+
 export default {
   name: 'Counter',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App',
-      times: 25 * 60,//s
+      percent: 25 * 60,//s
     }
   },
   create () {
       this.timer = setInterval(()=>{
         this.times--
+        timeUtil.formatTime(this.times)
         if(this.times===0){
           clearInterval(this.timer)
         }

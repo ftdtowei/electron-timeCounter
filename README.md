@@ -1,4 +1,4 @@
-# demo
+# ftd-demo
 
 > A Vue.js project
 

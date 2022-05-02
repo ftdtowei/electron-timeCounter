@@ -2,22 +2,12 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import Counter from '@/components/counter/Counter'
-import Antd from 'ant-design-vue';
-import App from '../App';
-import 'ant-design-vue/dist/antd.css';
+import test from '@/components/counter/test'
 
 
-/* eslint-disable no-new */
-new Vue({
-  el: '#app',
-  components: { App },
-  template: '<App/>',
-});
 
-Vue.config.productionTip = false;
+
 Vue.use(Router)
-Vue.use(Antd);
-
 
 export default new Router({
   routes: [
@@ -27,9 +17,9 @@ export default new Router({
       component: HelloWorld
     },
     {
-      path: '/Counter',
-      name: 'Counter',
-      component: Counter
+      path: '/test',
+      name: 'test',
+      component: test
     }
   ]
 })

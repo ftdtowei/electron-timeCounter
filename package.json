@@ -1,5 +1,5 @@
 {
-  "name": "demo",
+  "name": "ftd-demo",
   "version": "1.0.0",
   "description": "A Vue.js project",
   "author": "guorui <guorui@csii.com.cn>",
@@ -11,8 +11,6 @@
   },
   "dependencies": {
     "ant-design-vue": "^1.7.8",
-    "electron": "^18.1.0",
-    "nedb": "^1.8.0",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },
